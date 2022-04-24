@@ -1,0 +1,38 @@
+{
+    "name": "web-editor",
+    "version": "0.0.1",
+    "license": "MIT",
+    "scripts": {
+        "build": "npm i && webpack",
+        "build:production": "npm i && webpack  --mode=production",
+        "start": "webpack serve --open --host 0.0.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.37",
+        "@types/react-dom": "^17.0.11",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^5.1.1",
+        "css-loader": "^6.5.1",
+        "html-webpack-plugin": "^4.5.2",
+        "monaco-editor-webpack-plugin": "4.2.0",
+        "source-map-loader": "^0.2.4",
+        "style-loader": "^3.3.1",
+        "ts-loader": "^6.2.1",
+        "typescript": "^3.8.3",
+        "webpack": "^5.0.0",
+        "webpack-bundle-analyzer": "^4.5.0",
+        "webpack-cli": "^4.9.1",
+        "webpack-dev-server": "^3.10.1",
+        "webpack-require-from": "1.8.6"
+    },
+    "dependencies": {
+        "@codingame/monaco-jsonrpc": "0.3.1",
+        "monaco-editor": "^0.28.1",
+        "monaco-editor-core": "^0.28.1",
+        "monaco-languageclient": "0.13.1-next.9",
+        "process": "^0.11.10",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-monaco-editor": "^0.46.0"
+    }
+}
