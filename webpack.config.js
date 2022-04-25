@@ -48,12 +48,6 @@ module.exports = (env, argv) => {
                     exclude: /node_modules/,
                 },
                 {
-                    test: /\.js$/,
-                    use: ['source-map-loader'],
-                    enforce: 'pre',
-                    exclude: [/vscode-jsonrpc/, /vscode-languageclient/, /vscode-languageserver-protocol/]
-                },
-                {
                     test: /\.css$/,
                     include: APP_DIR,
                     use: [{
